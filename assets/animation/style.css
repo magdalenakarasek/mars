@@ -1,0 +1,103 @@
+.organize {
+  display: flex;
+  justify-content: center;
+}
+
+.block-vertical {
+  position: relative;
+  width: 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 999999;
+}
+.stripe {
+  width: 10px;
+  height: 225px;
+  background-color: #000;
+  animation-name: music;
+  animation-duration: 1.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+}
+
+.stripe:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.stripe:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.stripe:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.stripe:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+.stripe:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+.stripe:nth-of-type(6) {
+  animation-delay: 1s;
+}
+.stripe:nth-of-type(7) {
+  animation-delay: 1.2s;
+}
+
+@keyframes music {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.block-horizontal {
+  align-self: center;
+  height: 180px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 90;
+}
+
+.stripeh {
+  width: 170px;
+  height: 10px;
+  background-color: #000;
+  animation-name: music;
+  animation-duration: 1.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.stripeh:nth-of-type(7) {
+  animation-delay: 0s;
+}
+.stripeh:nth-of-type(6) {
+  animation-delay: 0.2s;
+}
+.stripeh:nth-of-type(5) {
+  animation-delay: 0.4s;
+}
+.stripeh:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+.stripeh:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+.stripeh:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.stripeh:nth-of-type(1) {
+  animation-delay: 1.2s;
+}

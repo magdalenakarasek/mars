@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.first-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(./img/mars_surface.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  align-self: flex-start;
+  margin: 20px 0 0 50px;
+  opacity: 0.5;
+}
+
+.titlle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 90px;
+  text-align: right;
+  color: #fff;
+  z-index: 222222;
+}
+
+.main-tittle {
+  font-family: Oswald;
+  font-size: 140px;
+  line-height: 130px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subtittle-box {
+  font-family: Lato;
+  font-size: 20px;
+}
+
+.first-word {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.btn-box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.btn:link,
+.btn:visited {
+  border: none;
+  display: flex;
+  padding-left: 25px;
+  padding-top: 12px;
+  height: 30px;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background: linear-gradient(90deg, #000 60%, transparent 40%);
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  color: #000;
+  background: linear-gradient(90deg, transparent 60%, #fff 40%);
+}
+
+.page-number {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 100px;
+  height: 150px;
+  font-family: Oswald;
+  font-size: 100px;
+}
+.first-number {
+  font-size: 100%;
+}
+.second-number {
+  padding-top: 26px;
+  font-size: 30%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  height: 60vh;
+}
+
+.main-menu {
+  font-family: Lato;
+  font-weight: 400;
+  padding: 15px 0 0 0;
+  margin: 100px 0 0 0;
+}
+
+.main-menu--item {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.main-menu--link--m:link,
+.main-menu--link--m:visited,
+.main-menu--link--g:link,
+.main-menu--link--g:visited,
+.main-menu--link--a:link,
+.main-menu--link--a:visited,
+.main-menu--link--t:link,
+.main-menu--link--t:visited {
+  padding-left: 90px;
+  text-decoration: none;
+  color: #a8a6a6;
+}
+
+.main-menu--link--m:hover,
+.main-menu--link--m:active,
+.main-menu--link--g:hover,
+.main-menu--link--g:active {
+  background: linear-gradient(90deg, #000 55%, transparent 45%);
+  font-weight: 700;
+  color: #000;
+}
+.main-menu--link--a:hover,
+.main-menu--link--a:active {
+  background: linear-gradient(90deg, #000 63%, transparent 37%);
+  font-weight: 700;
+  color: #000;
+}
+
+.main-menu--link--t:hover,
+.main-menu--link--t:active {
+  background: linear-gradient(90deg, #000 50%, transparent 50%);
+  font-weight: 700;
+  color: #000;
+}
+
+.main-container {
+  margin: 100px 200px 0 200px;
+}
+.section-title {
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtittle {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section-text {
+  font-family: Lato;
+  font-weight: 400;
+  color: #a8a6a6;
+}
+
+.circle {
+  display: flex;
+  justify-content: flex-start;
+}
+.circle-item {
+  text-decoration: none;
+}
+.fas {
+  margin-right: 5px;
+  color: #a8a6a6;
+  font-size: 10px;
+}
+
+.fas:hover,
+.fas:active {
+  color: #000;
+  font-size: 12px;
+}
+.main-img {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-img--title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 60vh;
+  margin-right: 90px;
+  background-color: #a8a6a6;
+}
+
+.section-title-img,
+.section-title-overimg {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 60px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  margin: 0;
+}
+
+.section-title-overimg {
+  position: absolute;
+  padding: 0 0 100px 0px;
+  color: #a8a6a6;
+}
+
+.small-text,
+.special-text {
+  margin-top: 30px;
+  font-family: Lato;
+  font-size: 10px;
+}
