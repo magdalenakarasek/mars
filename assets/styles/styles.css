@@ -20,7 +20,7 @@ body {
   height: 100vh;
 }
 
-.logo {
+.first-page_logo {
   width: 100px;
   height: auto;
   align-self: flex-start;
@@ -28,7 +28,7 @@ body {
   opacity: 0.5;
 }
 
-.titlle-container {
+.first-page_title-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -47,7 +47,7 @@ body {
   margin: 0;
 }
 
-.subtittle-box {
+.subtittle {
   font-family: Lato;
   font-size: 20px;
 }
@@ -57,13 +57,8 @@ body {
   font-weight: 700;
 }
 
-.btn-box {
-  display: flex;
-  align-items: flex-end;
-}
-
-.btn:link,
-.btn:visited {
+.btn-learn:link,
+.btn-learn:visited {
   border: none;
   display: flex;
   padding-left: 25px;
@@ -81,8 +76,8 @@ body {
   cursor: pointer;
 }
 
-.btn:hover,
-.btn:active {
+.btn-learn:hover,
+.btn-learn:active {
   color: #000;
   background: linear-gradient(90deg, transparent 60%, #fff 40%);
 }
@@ -91,16 +86,20 @@ body {
   display: flex;
   align-items: flex-start;
   padding-top: 100px;
-  height: 150px;
   font-family: Oswald;
+}
+
+.page-number_first {
+  padding: 0;
+  height: 150px;
   font-size: 100px;
+  font-family: Oswald;
 }
-.first-number {
-  font-size: 100%;
-}
-.second-number {
+
+.page-number_second {
   padding-top: 26px;
-  font-size: 30%;
+  font-family: Oswald;
+  font-size: 40px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -109,58 +108,36 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
-  height: 60vh;
+  height: 70vh;
 }
 
-.main-menu {
+.main-info_menu {
+  display: flex;
+  flex-direction: column;
   font-family: Lato;
   font-weight: 400;
-  padding: 15px 0 0 0;
+  padding: 15px 10px 0 0;
   margin: 100px 0 0 0;
 }
 
-.main-menu--item {
-  margin-bottom: 20px;
-  display: block;
-}
-
-.main-menu--link--m:link,
-.main-menu--link--m:visited,
-.main-menu--link--g:link,
-.main-menu--link--g:visited,
-.main-menu--link--a:link,
-.main-menu--link--a:visited,
-.main-menu--link--t:link,
-.main-menu--link--t:visited {
+.main-info_menu_link:link,
+.main-info_menu_link:visited {
   padding-left: 90px;
+  margin-bottom: 20px;
   text-decoration: none;
   color: #a8a6a6;
 }
 
-.main-menu--link--m:hover,
-.main-menu--link--m:active,
-.main-menu--link--g:hover,
-.main-menu--link--g:active {
-  background: linear-gradient(90deg, #000 55%, transparent 45%);
-  font-weight: 700;
-  color: #000;
-}
-.main-menu--link--a:hover,
-.main-menu--link--a:active {
-  background: linear-gradient(90deg, #000 63%, transparent 37%);
-  font-weight: 700;
-  color: #000;
-}
-
-.main-menu--link--t:hover,
-.main-menu--link--t:active {
+.main-info_menu_link:hover,
+.main-info_menu_link:active {
   background: linear-gradient(90deg, #000 50%, transparent 50%);
   font-weight: 700;
   color: #000;
 }
 
-.main-container {
-  margin: 100px 200px 0 200px;
+.main-info_main-box {
+  margin: 100px 0 0 200px;
+  flex-grow: 2;
 }
 .section-title {
   margin: 0;
@@ -168,6 +145,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   font-weight: bold;
+  z-index: 9999999;
 }
 
 .section-subtittle {
@@ -182,11 +160,11 @@ body {
   color: #a8a6a6;
 }
 
-.circle {
+.main-info_circle-menu {
   display: flex;
   justify-content: flex-start;
 }
-.circle-item {
+.circle-menu_item {
   text-decoration: none;
 }
 .fas {
@@ -202,37 +180,293 @@ body {
 }
 .main-img {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 }
-.main-img--title {
+.main-img_box {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 60vh;
+  width: 200px;
   margin-right: 90px;
-  background-color: #a8a6a6;
+  background-color: #e2dddd;
+  z-index: 60000;
 }
 
-.section-title-img,
-.section-title-overimg {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 60px;
-  font-weight: bold;
-  transform: rotate(90deg);
-  margin: 0;
+.main-img-title,
+.main-img_title_background {
+  transform: rotate(-90deg);
 }
 
-.section-title-overimg {
+.main-img-title {
+  position: relative;
+  padding-top: 156px;
+}
+.main-img_title_background {
   position: absolute;
-  padding: 0 0 100px 0px;
-  color: #a8a6a6;
+  margin: 127px 2px 0 0;
+  padding: 60px 50px 0px;
+  font-size: 80px;
+  color: #e2dddd;
+  z-index: 90;
 }
 
-.small-text,
+.footer-text,
 .special-text {
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: Lato;
+  font-style: italic;
+  font-weight: 400;
   font-size: 10px;
+  line-height: 160%;
+  color: #000;
+}
+
+.special-text {
+  text-decoration: underline;
+}
+
+.aeronautics {
+  display: flex;
+  align-items: center;
+}
+.aeronautics_rocket {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  background-image: url(./img/rocket.jpg);
+  background-position: top;
+  background-size: cover;
+  z-index: 90;
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 400px;
+  width: 1040px;
+  height: 70vh;
+  background-color: #1a1818;
+  z-index: 80000;
+}
+
+.areonautics_solar-system {
+  height: 70vh;
+  width: auto;
+}
+
+.box_text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px 80px 100px 65px;
+}
+
+.areo-number {
+  position: absolute;
+  font-size: 100px;
+  margin: -90px 0 0 -30px;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 8;
+}
+
+.aero-title {
+  color: #fff;
+  font-size: 50px;
+}
+
+.section-separator {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -5px;
+  padding: 0;
+}
+.thick {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(231, 95, 29);
+}
+
+.thin {
+  width: 130px;
+  height: 1px;
+  background-color: rgb(231, 95, 29);
+}
+
+.aero-text {
+  line-height: 150%;
+  color: #e2dddd;
+}
+
+.btn-areo {
+  width: 127px;
+}
+
+.mars-today {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mars-today_martian {
+  position: relative;
+  width: 1040px;
+  height: 70vh;
+  margin-left: 400px;
+  background-image: url(./img/martian-sits.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.mars-today-box {
+  margin: 100px 0 0 90px;
+  width: 500px;
+  height: 70vh;
+  background-color: #e2dddd;
+}
+
+.mars-toady-number {
+  color: rgba(255, 255, 255, 0.8);
+}
+.mars-today-title {
+  font-size: 50px;
+}
+
+.mars-today-separator {
+  margin-top: 20px;
+}
+
+.mars-today-text {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 150%;
+}
+.mars-today-footer {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.mars-today-special-test {
+  font-size: 16px;
+}
+
+.btn-mars-today {
+  position: absolute;
+  margin-top: 350px;
+}
+
+.solar-system-box {
+  width: 500px;
+  height: 70vh;
+  background-color: transparent;
+}
+
+.solar-system {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 300px;
+}
+.background {
+  position: absolute;
+  margin-top: 300px;
+  background-color: #1a1818;
+  height: 70vh;
+  width: 100%;
+  z-index: 6;
+}
+.solar-system-launch {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-left: 90px;
+  background-image: url(./img/Space-X.jpg);
+  background-size: cover;
+  z-index: 98;
+}
+
+.solar-system-box {
+  height: 40vh;
+  margin: -150px 0 0 0;
+  position: absolute;
+
+  z-index: 88888;
+}
+
+.solar-system-box_text {
+  margin: 0 120px 0 -50px;
+}
+
+.solar-system-number {
+  margin-top: -75px;
+  color: #e2dddd;
+}
+.solar-system-separator {
+  margin-top: 2px;
+}
+.solar-system-text {
+  margin-top: 52px;
+  color: #fff;
+}
+
+.btn-solar-system:link,
+.btn-solar-system:visited {
+  color: #000;
+  background: linear-gradient(90deg, #fff 60%, transparent 40%);
+}
+
+.btn-solar-system:hover,
+.btn-solar-system:active {
+  color: #fff;
+  background: linear-gradient(90deg, transparent 60%, #000 40%);
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0 0;
+  z-index: 88888;
+}
+
+.footer-menu {
+  position: absolute;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Lato;
+  font-weight: 700;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item {
+  position: relative;
+  list-style: none;
+}
+
+.line {
+  position: absolute;
+  bottom: 45px;
+  height: 3px;
+  width: 100%;
+  visibility: hidden;
+  background-color: #fff;
+}
+
+.footer-link:link .line,
+.footer-link:visited .line {
+  visibility: hidden;
+}
+
+.footer-link:hover .line,
+.footer-link:active .line {
+  visibility: visible;
 }
