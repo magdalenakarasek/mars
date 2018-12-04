@@ -108,16 +108,17 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
+  width: 100%;
   height: 70vh;
 }
 
 .main-info_menu {
   display: flex;
   flex-direction: column;
-  font-family: Lato;
-  font-weight: 400;
   padding: 15px 10px 0 0;
   margin: 100px 0 0 0;
+  font-family: Lato;
+  font-weight: 400;
 }
 
 .main-info_menu_link:link,
@@ -136,7 +137,8 @@ body {
 }
 
 .main-info_main-box {
-  margin: 100px 0 0 200px;
+  margin-left: 5%;
+  padding: 100px 0 0 0;
   flex-grow: 2;
 }
 .section-title {
@@ -187,6 +189,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 60vh;
   width: 200px;
   margin-right: 90px;
@@ -205,7 +208,7 @@ body {
 }
 .main-img_title_background {
   position: absolute;
-  margin: 127px 2px 0 0;
+  margin: 92px 2px 0 0;
   padding: 60px 50px 0px;
   font-size: 80px;
   color: #e2dddd;
@@ -234,7 +237,7 @@ body {
 .aeronautics_rocket {
   position: relative;
   width: 50%;
-  height: 100vh;
+  height: 95vh;
   background-image: url(./img/rocket.jpg);
   background-position: top;
   background-size: cover;
@@ -245,16 +248,17 @@ body {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  margin-left: 400px;
-  width: 1040px;
-  height: 70vh;
+  align-items: center;
+  margin-left: 30%;
+  width: 70%;
+  height: 80vh;
   background-color: #1a1818;
   z-index: 80000;
 }
 
 .areonautics_solar-system {
-  height: 70vh;
-  width: auto;
+  width: 50%;
+  height: auto;
 }
 
 .box_text {
@@ -262,7 +266,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 100px 80px 100px 65px;
+  padding: 100px 80px 100px 65px;
+  width: 50%;
 }
 
 .areo-number {
@@ -281,7 +286,7 @@ body {
 .section-separator {
   display: flex;
   justify-content: flex-start;
-  margin-top: -5px;
+  margin-top: 5px;
   padding: 0;
 }
 .thick {
@@ -306,30 +311,71 @@ body {
 }
 
 .mars-today {
+  height: 90vh;
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mars-today_martian {
   position: relative;
-  width: 1040px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   height: 70vh;
-  margin-left: 400px;
+  margin-left: 30%;
   background-image: url(./img/martian-sits.png);
   background-size: cover;
   background-position: center;
 }
 
-.mars-today-box {
-  margin: 100px 0 0 90px;
-  width: 500px;
-  height: 70vh;
-  background-color: #e2dddd;
+.play_link {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.fa-play-circle {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 40px;
 }
 
+.play_text {
+  padding: 10px 0 0 0;
+  font-family: Lato;
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+}
+
+.play_link .fa-play-circle:active,
+.play_link .fa-play-circle:hover {
+  font-size: 50px;
+}
+
+.mars-today-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-top: 90px;
+  width: 45%;
+  height: 80vh;
+  background-color: #ededed;
+}
+.mars-today-box_text {
+  width: 100%;
+}
 .mars-toady-number {
-  color: rgba(255, 255, 255, 0.8);
+  color: #e2dddd;
 }
 .mars-today-title {
   font-size: 50px;
@@ -367,11 +413,13 @@ body {
 .solar-system {
   display: flex;
   justify-content: flex-end;
-  margin-top: 300px;
+  align-items: flex-start;
+  margin-top: 250px;
 }
 .background {
+  align-self: flex-end;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 90px;
   background-color: #1a1818;
   height: 70vh;
   width: 100%;
@@ -379,35 +427,37 @@ body {
 }
 .solar-system-launch {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100vh;
-  margin-left: 90px;
+  margin-left: 10%;
   background-image: url(./img/Space-X.jpg);
   background-size: cover;
   z-index: 98;
 }
 
 .solar-system-box {
+  width: 43%;
+  padding: 0;
+  margin: 0;
+  height: 60vh;
+  margin-top: -150px;
   height: 40vh;
-  margin: -150px 0 0 0;
-  position: absolute;
-
   z-index: 88888;
 }
 
 .solar-system-box_text {
-  margin: 0 120px 0 -50px;
+  width: 80%;
+  padding: 0;
+  margin: 0;
 }
 
 .solar-system-number {
   margin-top: -75px;
-  color: #e2dddd;
+  color: #ededed;
 }
-.solar-system-separator {
-  margin-top: 2px;
-}
+
 .solar-system-text {
-  margin-top: 52px;
+  margin-top: 50px;
   color: #fff;
 }
 
@@ -469,4 +519,161 @@ body {
 .footer-link:hover .line,
 .footer-link:active .line {
   visibility: visible;
+}
+
+@media (max-width: 992px) {
+  .main-img-title {
+    text-align: center;
+  }
+  .main-img_title_background {
+    margin-top: 90px;
+  }
+  .aeronautics_rocket {
+    height: 95vh;
+    margin-left: 5%;
+  }
+  .aero-number {
+    margin-left: -43px;
+  }
+  .aero-title {
+    margin-top: -20px;
+  }
+
+  .section-separator {
+    margin-top: 3px;
+  }
+
+  .box {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 95vh;
+  }
+  .box_text {
+    margin-top: -20px;
+    height: 50%;
+    width: 100%;
+  }
+  .btn-learn:link,
+  .btn-learn:visited {
+    display: block;
+  }
+  .areonautics_solar-system {
+    margin: 0px 0px -12px -15px;
+    height: 55vh;
+    width: auto;
+  }
+  .mars-today {
+    margin-top: 40px;
+  }
+  .mars-today-box {
+    z-index: 8;
+    width: 90%;
+    margin: 0;
+    height: 64vh;
+  }
+
+  .mars-today-number {
+    margin-left: -25px;
+  }
+
+  .mars-today-title {
+    margin-top: -19px;
+  }
+  .btn-mars-today {
+    margin-top: 228px;
+  }
+
+  .mars-today_martian {
+    margin-left: 25%;
+    margin-top: 706px;
+    z-index: 333333;
+    width: 75%;
+    height: 360px;
+  }
+
+  .play_link {
+    margin: 0;
+  }
+  .solar-system {
+    height: 90vh;
+    margin-top: 250px;
+  }
+  .solar-system-box_text {
+    margin-top: -147px;
+  }
+  .solar-system-launch {
+    margin-top: 160px;
+    width: 90%;
+    margin-left: 10%;
+    background-position: center;
+    height: 85vh;
+  }
+
+  .solar-system-box {
+    height: 90vh;
+    margin-left: 0;
+    width: 55%;
+    margin-top: 195px;
+  }
+  .separator_solar {
+    margin-top: -22px;
+  }
+  .background {
+    align-self: flex-end;
+    height: 70vh;
+    margin-top: 200px;
+  }
+  .footer {
+    margin: 152px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-page {
+    background-position: left;
+  }
+
+  .main-tittle {
+    font-size: 100px;
+  }
+
+  .subtittle {
+    font-size: 18px;
+  }
+
+  .page-number_first {
+    font-size: 70px;
+  }
+
+  .page-number_second {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 50px;
+  }
+
+  .main-img_box {
+    width: 55%;
+    margin: 0;
+  }
+
+  .main-img-title {
+    padding-top: 62px;
+    font-size: 50px;
+  }
+
+  .main-img_title_background {
+    font-size: 60px;
+    align-self: center;
+    padding: 27px 114px 0 0;
+  }
+
+  .;
 }
